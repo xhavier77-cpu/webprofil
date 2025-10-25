@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        user-select: none;
+        background-image: url(website.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        transition: background-color 0.5s ease, color 0.5s ease;
+        width: 100%;
+        flex-direction: column;
+        background-position: center;
+        overflow-y: hidden;
+    }
+    .halaman {
+        height: 100vh;
+        display: flex;
+        position: relative;
+    }
+    #halaman1
+
+    #halaman2
+
+    html {
+        scroll-behavior: smooth;
+    }
+    a {
+        text-decoration: none;
+        color: rgb(253, 249, 249);
+        font-size: 20px;
+        text-decoration-line: underline;
+    }
+    .boxatas{
+        background-color: rgb(54, 53, 51);
+        height: 65px;
+        width: 100%;
+        margin: 0;
+        position: absolute;
+    }
+
+    .ttitik {
+        text-decoration: none;
+        color: rgb(253, 249, 249);
+        font-size: 20px; 
+        top: 15px;
+        cursor: pointer;
+        text-decoration-line: underline;
+        width: 10px;
+        position: absolute;
+    }
+    .ttitik:hover {
+        color: rgb(142, 144, 146);
+        transform: scale(1.2);
+    }
+    a:hover {
+        color: rgb(142, 144, 146);
+        transform: scale(1.1);
+    }
+    .box {
+        background-color: rgba(254, 252, 252, 0.3);
+        backdrop-filter: blur(5px);
+        width: 700px;
+        height: 400px;
+        display: flex;
+        left: 90px;
+        position: absolute;
+        top: 230px;
+        border-radius: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .box:hover {
+        transform: scale(1.1);
+    }
+    .box1 {
+        background-color: rgba(254, 252, 252, 0.3);
+        backdrop-filter: blur(5px);
+        width: 500px;
+        height: 400px;
+        display: flex;
+        right: 90px;
+        position: absolute;
+        top: 230px;
+        border-radius: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .box1:hover {
+        transform: scale(1.1);
+    }
+    p {
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        white-space: pre;
+    }
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: rgb(53, 49, 56, 0.3);
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+        right: 50px;
+        top: 60px;
+    }
+    .menu a {
+        display: block; 
+        padding: 10px 16px; 
+        color: rgb(240, 241, 247); 
+        text-decoration: none;
+        position: relative; 
+    }
+    .menu a:hover {
+        background-color: #4289ec;
+        border-radius: 10px;
+        transform: scale(1.1);
+    }
+</style>
+<body>
+<div id="halaman1" class="halaman">
+    <div class="boxatas">
+        <h2 style="left: 30px; font-family: 'Times New Roman', Times, serif; color: rgb(212, 212, 218); position: absolute;font-size: 50px; top: 1px; font-weight: bold; margin: 0;">BIODATA</h2>
+        <a href="#" style="left: 1000px; top: 20px; position: absolute;">Prestasi</a>
+        <a href="#" style="left: 1210px; top: 20px; position: absolute;">Pengalaman</a>
+        <a href="#" style="left: 1095px; top: 20px;position: absolute;">Kenangan</a>
+        <div class="ttitik" onclick="toggleMenu" style="left: 1350px;">Kontak✆</div>
+        </div>
+    <div class="box">
+        <img style="width: 200px;border-radius: 20px; height: 300px; top: 45px; position: absolute; left: 20px;"  src="profile.jpg" />
+        <p style="top: 50px; left: 240px;position: absolute;">Nama         :  Fahrul Maulana Ramadhan</p>
+        <P style="top: 90px; left: 240px;position: absolute;">Status         :  Mahasiswa</P>
+        <p style="top: 130px; left: 240px; position: absolute;">TTL           :  Situbondo,17-10-2006</p>
+        <p style="top: 170px; left: 240px; position: absolute;">Sekolah      :  Universitas Jember</p>
+        <p style="top: 210px; left: 240px; position: absolute;">Fakultas     :  Ilmu Komputer</p>
+        <p style="top: 250px; left: 240px; position: absolute;">Prodi          :  Informatka</p>
+        <p style="top: 290px; left: 240px; position: absolute;">Alamat       :  Asembagus,Situbondo,Jawa timur</p>
+    </div>
+    <div class="box1">
+        <h2 style="color: rgb(27, 28, 28);position: absolute; left: 135px; font-weight: bold; top: 20px;">HISTORY SEKOLAH</h2>
+        <img style="width: 100px; position: absolute; top: 100px; left: 90px;" src="images.jpeg" />
+        <a style="position: absolute; top: 210px; left: 85px; font-family: Arial, Helvetica, sans-serif;font-size: 15px; color: rgb(62, 65, 65);" href="https://www.sdn1gudang.sch.id/" target="_blank" rel="noopener noreferrer">SDN 1 GUDANG</a>
+        <img style="width: 90px; position: absolute; top: 100px; right: 90px;" src="smp.png" />
+        <a style="position: absolute; top: 210px; right: 55px; font-family: Arial, Helvetica, sans-serif;font-size: 15px; color: rgb(62, 65, 65);" href="https://www.smpn1asembagus.sch.id/" target="_blank" rel="noopener noreferrer">SMPN 1 ASEMBAGUS</a>
+        <img style="width: 240px; position: absolute; top: 240px; left: 25px;" src="sma.png" />
+        <a style="position: absolute; top: 360px; left: 70px; font-family: Arial, Helvetica, sans-serif;font-size: 15px; color: rgb(62, 65, 65);" href="https://sman1asembagus.sch.id/" target="_blank" rel="noopener noreferrer">SMAN 1 ASEMBAGUS</a>
+        <img style="width: 120px; position: absolute; top: 240px; right: 75px" src="Logo_unej.png" />
+        <a style="position: absolute; top: 360px; right: 50px; font-family: Arial, Helvetica, sans-serif;font-size: 15px; color: rgb(62, 65, 65);" href="https://unej.ac.id/" target="_blank" rel="noopener noreferrer">UNIVERSITAS JEMBER</a>
+    </div>
+    <div class="menu" id="menu">
+      <a href="https://wa.me/qr/Q7SM7BRHT6E6H1" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <a href="https://www.instagram.com/faahmrr?igsh=Yjg5YWZwZWYxZTZm" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://github.com/xhavier77-cpu" target="_blank" rel="noopener noreferrer">Github</a>
+    </div>
+    
+    <a href="#halaman2" style="position: absolute; bottom: 10px; translate: -50% -50%; left: 45%; right: 55%; text-decoration: none;">Selengkapnya....</a>
+</div>
+<div id="halaman2" class="halaman">
+    <div class="boxatas">
+        <a href="#halaman1" style="top: 5px; left: 15px; font-size: 40px; width: 10px; position: relative;">🏠︎</a>
+        <a href="#2" style="left: 1000px; top: 1px; position: relative;">Prestasi</a>
+        <a href="#2" style="left: 1040px; top: 1px; position: relative;">Pengalaman</a>
+        <a href="#2" style="left: 1080px; top: 1px;position: relative;">Kenangan</a>
+        <div class="ttitik" style="left: 1415px; margin-top: 0;top: 23px;">Kontak✆</div>
+        <div class="menu" id="menu" style="top: 60px; right: 20px;">
+            <a href="https://wa.me/qr/Q7SM7BRHT6E6H1" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a href="https://www.instagram.com/faahmrr?igsh=Yjg5YWZwZWYxZTZm" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://github.com/xhavier77-cpu" target="_blank" rel="noopener noreferrer">Github</a>
+        </div>
+    </div>
+</div>
+<script>
+const titikSemua = document.querySelectorAll('.ttitik');
+const menuSemua = document.querySelectorAll('.menu');
+
+titikSemua.forEach((titik, index) => {
+  titik.addEventListener('click', (e) => {
+    e.stopPropagation();
+    menuSemua[index].style.display = 
+      menuSemua[index].style.display === 'block' ? 'none' : 'block';
+  });
+});
+
+document.addEventListener('click', (e) => {
+  menuSemua.forEach(menu => {
+    if (!menu.contains(e.target) && !e.target.classList.contains('ttitik')) {
+      menu.style.display = 'none';
+    }
+  });
+});
+</script>
+
+</body>
+</html>
